@@ -1,0 +1,35 @@
+name: PluginsInfo
+author: TheNewHEROBRINE
+version: 1.0.0
+main: TheNewHEROBRINE\PluginsInfo\Main
+api: 3.0.0-ALPHA10
+
+commands:
+ plugininfo:
+  usage: "/plugininfo <PluginName>"
+  permission: pluginsinfo.command.plugininfo
+  aliases: ["plinfo"]
+ commandinfo:
+  usage: "/commandinfo <commandname>"
+  permission: pluginsinfo.command.commandinfo
+  aliases: ["cmdinfo"]
+ permissioninfo:
+  usage: "/permissioninfo <permission.name>"
+  permission: pluginsinfo.command.permissioninfo
+  aliases: ["perminfo"]
+ permissions:
+   usage: "/permissions"
+   permission: pluginsinfo.command.permissions
+   aliases: ["perms"]
+
+permissions:
+ pluginsinfo:
+  children:
+   pluginsinfo.command:
+    children:
+     pluginsinfo.command.plugininfo:
+      default: op
+     pluginsinfo.command.commandinfo:
+      default: op
+     pluginsinfo.command.commandinfo:
+      default: op
