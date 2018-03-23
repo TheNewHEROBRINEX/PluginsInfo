@@ -2,7 +2,7 @@ name: PluginsInfo
 author: TheNewHEROBRINE
 version: 1.0.0
 main: TheNewHEROBRINE\PluginsInfo\Main
-api: 3.0.0-ALPHA10
+api: 3.0.0-ALPHA11
 
 commands:
  plugininfo:
